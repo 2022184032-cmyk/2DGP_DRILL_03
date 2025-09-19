@@ -14,21 +14,21 @@ def move_top():
 
 def move_right():
     print('Moving right')
-    for y in range(550, 50, -10):  # 위에서 아래로 이동
+    for y in range(550, 50, -10):
         draw_boy(800, y)
     pass
 
 
 def move_bottom():
     print('Moving bottom')
-    for x in range(800, 0, -10):  # 오른쪽에서 왼쪽으로 이동
+    for x in range(800, 0, -10):
         draw_boy(x, 50)
     pass
 
 
 def move_left():
     print('Moving left')
-    for y in range(50, 550, 10):  # 아래에서 위로 이동
+    for y in range(50, 550, 10):
         draw_boy(0, y)
     pass
 
@@ -65,7 +65,7 @@ def move_p1():
 
 
 def move_p2():
-    print('move_p1')
+    print('move_p2')
     A = (400, 550)
     B = (200, 150)
     steps = 50
@@ -77,6 +77,14 @@ def move_p2():
 
 
 def move_p3():
+    print('move_p3')
+    B = (200, 150)
+    C = (600, 150)
+    steps = 50
+    for i in range(steps + 1):
+        x = B[0] + (C[0] - B[0]) * i / steps
+        y = B[1] + (C[1] - B[1]) * i / steps
+        draw_boy(x, y)
     pass
 
 
@@ -91,8 +99,6 @@ def draw_boy(x: float, y: float):
     clear_canvas_now()
     boy.draw_now(x, y)
     delay(0.1)
-
-
 
 
 while True:
