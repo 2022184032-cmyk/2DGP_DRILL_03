@@ -51,8 +51,32 @@ def moves_circle():
         draw_boy(x, y)
     pass
 
+
+def move_p1():
+    print('move_p1')
+    A = (400, 550)
+    B = (200, 150)
+    steps = 50
+    for i in range(steps + 1):
+        x = A[0] + (B[0] - A[0]) * i / steps
+        y = A[1] + (B[1] - A[1]) * i / steps
+        draw_boy(x, y)
+    pass
+
+
+def move_p2():
+    pass
+
+
+def move_p3():
+    pass
+
+
 def moves_triangle():
     print('moves_triangle')
+    move_p1()
+    move_p2()
+    move_p3()
     pass
 
 def draw_boy(x: float, y: float):
@@ -65,7 +89,7 @@ def draw_boy(x: float, y: float):
 
 while True:
     #moves_circle()
-    moves_rectangle()
+    #moves_rectangle()
     moves_triangle()
     break
 
