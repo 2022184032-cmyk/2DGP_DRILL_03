@@ -51,6 +51,9 @@ def moves_circle():
         draw_boy(x, y)
     pass
 
+def moves_triangle():
+    print('moves_triangle')
+    pass
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
@@ -58,9 +61,12 @@ def draw_boy(x: float, y: float):
     delay(0.1)
 
 
+
+
 while True:
     #moves_circle()
     moves_rectangle()
+    moves_triangle()
     break
 
 close_canvas()
