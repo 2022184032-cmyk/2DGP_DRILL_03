@@ -54,6 +54,18 @@ def moves_circle():
 
 def move_p1():
     print('move_p1')
+    C = (600, 150)
+    A = (400, 550)
+    steps = 50
+    for i in range(steps + 1):
+        x = C[0] + (A[0] - C[0]) * i / steps
+        y = C[1] + (A[1] - C[1]) * i / steps
+        draw_boy(x, y)
+    pass
+
+
+def move_p2():
+    print('move_p1')
     A = (400, 550)
     B = (200, 150)
     steps = 50
@@ -61,10 +73,6 @@ def move_p1():
         x = A[0] + (B[0] - A[0]) * i / steps
         y = A[1] + (B[1] - A[1]) * i / steps
         draw_boy(x, y)
-    pass
-
-
-def move_p2():
     pass
 
 
