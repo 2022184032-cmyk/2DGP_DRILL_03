@@ -14,7 +14,8 @@ def move_top():
 
 def move_right():
     print('Moving right')
-
+    for y in range(550, 50, -10):  # 위에서 아래로 이동
+        draw_boy(800, y)
     pass
 
 
@@ -54,7 +55,7 @@ def draw_boy(x: float, y: float):
 
 
 while True:
-    moves_circle()
+    #moves_circle()
     moves_rectangle()
     break
 
