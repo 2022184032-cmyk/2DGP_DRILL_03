@@ -28,6 +28,8 @@ def move_bottom():
 
 def move_left():
     print('Moving left')
+    for y in range(50, 550, 10):  # 아래에서 위로 이동
+        draw_boy(0, y)
     pass
 
 
