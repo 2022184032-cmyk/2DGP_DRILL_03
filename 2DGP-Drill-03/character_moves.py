@@ -21,6 +21,8 @@ def move_right():
 
 def move_bottom():
     print('Moving bottom')
+    for x in range(800, 0, -10):  # 오른쪽에서 왼쪽으로 이동
+        draw_boy(x, 50)
     pass
 
 
